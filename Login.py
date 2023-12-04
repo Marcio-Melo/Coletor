@@ -11,8 +11,6 @@ import time
 # Clicar em pular
 pyautogui.click(1726, 902, duration=1)
 
-
-
 # Clicar e digitar meu usuário  
 pyautogui.click(1557,555, duration=0.5)
 pyautogui.write('marcio')

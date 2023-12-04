@@ -11,19 +11,19 @@ import time
 # Clicar em pular
 pyautogui.click(1726, 902, duration=1)
 
-# Clicar e digitar meu usuário  
-pyautogui.click(1557,555, duration=0.5)
+# Clicar e digitar meu usuário
+pyautogui.click(1557, 555, duration=0.5)
 pyautogui.write('marcio')
 
 # Clicar e digitar minha senha
-pyautogui.click(1383,664, duration=0.5)
+pyautogui.click(1383, 664, duration=0.5)
 pyautogui.write('marcio')
 
 # Clicar no botão lembrar-me
-pyautogui.click(1270,731, duration=0.5)
+pyautogui.click(1270, 731, duration=0.5)
 
 # Clicar em entrar
-pyautogui.click(1333,802, duration=0.5)
+pyautogui.click(1333, 802, duration=0.5)
 
 # Rolar para baixo imediatamente
 # Este comando depende do sistema operacional (Ctrl + seta para baixo)
@@ -34,10 +34,10 @@ pyautogui.hotkey('ctrl', 'end')
 pyautogui.sleep(1)
 
 # Clicar em Nova operação
-pyautogui.click(1638,291, duration=0.5)
+pyautogui.click(1638, 291, duration=0.5)
 
 # Clicar na combo Solicitante
-pyautogui.click(1570,290, duration=0.5)
+pyautogui.click(1570, 290, duration=0.5)
 
 # Clicar na opção (Expedito)
 pyautogui.click(1402, 594, duration=1)
@@ -254,7 +254,7 @@ pyautogui.click(1223, 447, duration=0.5)
 pyautogui.click(1643, 512, duration=0.5)
 
 # Clicar na aba Crédito
-pyautogui.click(280,373, duration=0.5)
+pyautogui.click(280, 373, duration=0.5)
 
 # - Preenchimento da aba Crédito:
 # Crédito
@@ -285,7 +285,7 @@ keyboard.write(
 pyautogui.click(1704, 667, duration=0.5)
 
 # Clicar na atividade rural
-pyautogui.click(230,427, duration=0.5)
+pyautogui.click(230, 427, duration=0.5)
 
 # - Preenchimento da aba ATIVIDADE RURAL:
 # Atividade Rural
@@ -390,13 +390,13 @@ pyautogui.hotkey('ctrl', 'a')
 keyboard.write('10000')
 
 # Clicar no botão SALVAR PRINCIPAIS CLIENTES
-pyautogui.click(1677,638, duration=0.5)
+pyautogui.click(1677, 638, duration=0.5)
 
 # Clicar na aba SEGURO RURAL
-pyautogui.click(1211,302, duration=0.5)
+pyautogui.click(1211, 302, duration=0.5)
 
 # Clicar no campo Seguro Rural
-pyautogui.click(794,497, duration=0.5)
+pyautogui.click(794, 497, duration=0.5)
 # Pressionar Ctrl + A para selecionar todo o texto
 pyautogui.hotkey('ctrl', 'a')
 # Pressionar Delete para apagar o texto selecionado
@@ -416,10 +416,10 @@ pyautogui.hotkey('tab')
 pyautogui.hotkey('enter')
 
 # Clicar na aba Selos e Certificações
-pyautogui.click(1355,307, duration=0.5)
+pyautogui.click(1355, 307, duration=0.5)
 
 # Clicar no campo Selos e Certificações
-pyautogui.click(815,502, duration=0.5)
+pyautogui.click(815, 502, duration=0.5)
 # Pressionar Ctrl + A para selecionar todo o texto
 pyautogui.hotkey('ctrl', 'a')
 # Pressionar Delete para apagar o texto selecionado
@@ -432,10 +432,10 @@ pyautogui.hotkey('tab')
 pyautogui.hotkey('enter')
 
 # Clicar na aba  Iniciativas Socioambientais
-pyautogui.click(1530,300, duration=0.5)
+pyautogui.click(1530, 300, duration=0.5)
 
 # Clicar no campo Iniciativas Socioambientais
-pyautogui.click(815,502, duration=0.5)
+pyautogui.click(815, 502, duration=0.5)
 # Pressionar Ctrl + A para selecionar todo o texto
 pyautogui.hotkey('ctrl', 'a')
 # Pressionar Delete para apagar o texto selecionado
@@ -448,14 +448,7 @@ pyautogui.hotkey('tab')
 pyautogui.hotkey('enter')
 
 # Clicar na aba Bovinocultura
-pyautogui.click(263,498, duration=0.5)
-
-# - Preenchimento da aba Bovinocultura de leite:
-# Atividade Rural
-# Condomínio Agropecuário
-# - Preenchimento da aba Bovinocultura de leite:
-# Atividade Rural
-# Condomínio Agropecuário
+pyautogui.click(263, 498, duration=0.5)
 
 # Rolar para baixo imediatamente
 pyautogui.click(1616, 320, duration=0.5)
@@ -465,69 +458,32 @@ pyautogui.hotkey('ctrl', 'end')
 pyautogui.sleep(0.5)
 
 # Clicar botão Preencher ano (2020)
-pyautogui.click(1631,208, duration=0.5)
+pyautogui.click(1631, 208, duration=0.5)
 
-# campo Sistema de Produção
+# ir para campo Sistema de Produção
 pyautogui.hotkey('tab')
-# ir para o botão salvar seguro rural
 pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(0.5)
-
-
-def selecionar_opcao_aleatoria():
-
-    # Escolher aleatoriamente uma opção entre 0 e 3
-    opcao_aleatoria = random.randint(0, 3)
-
-    # Pressionar a seta para baixo a quantidade de vezes correspondente à opção escolhida
-    for _ in range(opcao_aleatoria + 1):
-        pyautogui.press('down')
-
-
-# Aguarde um curto período
-pyautogui.sleep(0.5)
-
-# Chamando a função para executar as ações com uma opção aleatória
-selecionar_opcao_aleatoria()
-
-pyautogui.press('enter')
-pyautogui.sleep(0.5)
-pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(0.5)
-# ir para o campo SISTEMA DE ORDENHA
-pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(0.5)
-
-# Escolher aleatoriamente uma opção entre 0 e 3
-opcao_aleatoria = random.randint(0, 3)
-
-for _ in range(opcao_aleatoria + 1):
-    pyautogui.press('down')
-
-# Pressionar a tecla enter
+# Selecionar opção (Extensivo)
+pyautogui.hotkey('down')
+pyautogui.hotkey('down')
 pyautogui.press('enter')
 pyautogui.sleep(0.5)
 
-# ir para o campo TIPO DE ATIVIDADE LEITEIRA
+# ir para campo Sistema de Ordenha
 pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(0.5)
 pyautogui.hotkey('tab')
-
+# Selecionar opção (Mecânico)
 pyautogui.hotkey('down')
 pyautogui.hotkey('down')
-pyautogui.hotkey('enter')
-# Aguarde um curto período
+pyautogui.press('enter')
 pyautogui.sleep(0.5)
 
-# Pressionar a tecla enter
+# ir para campo Tipo de Atividade Leiteira
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+# Selecionar opção (Produção de leite)
+pyautogui.hotkey('down')
+pyautogui.hotkey('down')
 pyautogui.press('enter')
 
 # Aguarde um curto período
@@ -793,10 +749,6 @@ pyautogui.sleep(0.5)
 
 # clicar no BOTÃO CONCLUIR
 pyautogui.hotkey('enter')
-
-# - Preenchimento da aba Bovinocultura de leite:
-# Atividade Rural
-# Condomínio Agropecuário
 
 # Rolar para baixo imediatamente
 pyautogui.click(1616, 320, duration=0.5)
@@ -806,68 +758,42 @@ pyautogui.hotkey('ctrl', 'end')
 pyautogui.sleep(0.5)
 
 # Clicar botão Preencher ano (2021)
-pyautogui.click(1649,289, duration=0.5)
+pyautogui.click(1649, 289, duration=0.5)
 
-# campo Sistema de Produção
-pyautogui.hotkey('tab')
-# ir para o botão salvar seguro rural
-pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(0.5)
-
-selecionar_opcao_aleatoria()
-
-    # Escolher aleatoriamente uma opção entre 0 e 3
-opcao_aleatoria = random.randint(0, 3)
-
-    # Pressionar a seta para baixo a quantidade de vezes correspondente à opção escolhida
-for _ in range(opcao_aleatoria + 1):
-        pyautogui.press('down')
-
+# Rolar para baixo imediatamente
+pyautogui.click(1616, 320, duration=0.5)
+pyautogui.hotkey('ctrl', 'end')
 
 # Aguarde um curto período
 pyautogui.sleep(0.5)
 
-# Chamando a função para executar as ações com uma opção aleatória
-selecionar_opcao_aleatoria()
+# Clicar botão Preencher ano (2020)
+pyautogui.click(1631, 208, duration=0.5)
 
-pyautogui.press('enter')
-pyautogui.sleep(0.5)
+# ir para campo Sistema de Produção
 pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(0.5)
-# ir para o campo SISTEMA DE ORDENHA
 pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(0.5)
-
-# Escolher aleatoriamente uma opção entre 0 e 3
-opcao_aleatoria = random.randint(0, 3)
-
-for _ in range(opcao_aleatoria + 1):
-    pyautogui.press('down')
-
-# Pressionar a tecla enter
+# Selecionar opção (Extensivo)
+pyautogui.hotkey('down')
+pyautogui.hotkey('down')
 pyautogui.press('enter')
 pyautogui.sleep(0.5)
 
-# ir para o campo TIPO DE ATIVIDADE LEITEIRA
+# ir para campo Sistema de Ordenha
 pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(0.5)
 pyautogui.hotkey('tab')
-
+# Selecionar opção (Mecânico)
 pyautogui.hotkey('down')
 pyautogui.hotkey('down')
-pyautogui.hotkey('enter')
-# Aguarde um curto período
+pyautogui.press('enter')
 pyautogui.sleep(0.5)
 
-# Pressionar a tecla enter
+# ir para campo Tipo de Atividade Leiteira
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+# Selecionar opção (Produção de leite)
+pyautogui.hotkey('down')
+pyautogui.hotkey('down')
 pyautogui.press('enter')
 
 # Aguarde um curto período
@@ -1133,10 +1059,6 @@ pyautogui.sleep(0.5)
 
 # clicar no BOTÃO CONCLUIR
 pyautogui.hotkey('enter')
-
-# - Preenchimento da aba Bovinocultura de leite:
-# Atividade Rural
-# Condomínio Agropecuário
 
 # Rolar para baixo imediatamente
 pyautogui.click(1616, 320, duration=0.5)
@@ -1146,68 +1068,32 @@ pyautogui.hotkey('ctrl', 'end')
 pyautogui.sleep(0.5)
 
 # Clicar botão Preencher ano (2022)
-pyautogui.click(1630,384, duration=0.5)
+pyautogui.click(1630, 384, duration=0.5)
 
-# campo Sistema de Produção
+# ir para campo Sistema de Produção
 pyautogui.hotkey('tab')
-# ir para o botão salvar seguro rural
 pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(1)
-
-selecionar_opcao_aleatoria()
-
-    # Escolher aleatoriamente uma opção entre 0 e 3
-opcao_aleatoria = random.randint(0, 3)
-
-    # Pressionar a seta para baixo a quantidade de vezes correspondente à opção escolhida
-for _ in range(opcao_aleatoria + 1):
-        pyautogui.press('down')
-
-
-# Aguarde um curto período
-pyautogui.sleep(1)
-
-# Chamando a função para executar as ações com uma opção aleatória
-selecionar_opcao_aleatoria()
-
-pyautogui.press('enter')
-pyautogui.sleep(1)
-pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(1)
-# ir para o campo SISTEMA DE ORDENHA
-pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(1)
-
-# Escolher aleatoriamente uma opção entre 0 e 3
-opcao_aleatoria = random.randint(0, 3)
-
-for _ in range(opcao_aleatoria + 1):
-    pyautogui.press('down')
-
-# Pressionar a tecla enter
+# Selecionar opção (Extensivo)
+pyautogui.hotkey('down')
+pyautogui.hotkey('down')
 pyautogui.press('enter')
 pyautogui.sleep(0.5)
 
-# ir para o campo TIPO DE ATIVIDADE LEITEIRA
+# ir para campo Sistema de Ordenha
 pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(0.5)
 pyautogui.hotkey('tab')
-
+# Selecionar opção (Mecânico)
 pyautogui.hotkey('down')
 pyautogui.hotkey('down')
-pyautogui.hotkey('enter')
-# Aguarde um curto período
+pyautogui.press('enter')
 pyautogui.sleep(0.5)
 
-# Pressionar a tecla enter
+# ir para campo Tipo de Atividade Leiteira
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+# Selecionar opção (Produção de leite)
+pyautogui.hotkey('down')
+pyautogui.hotkey('down')
 pyautogui.press('enter')
 
 # Aguarde um curto período
@@ -1473,10 +1359,6 @@ pyautogui.sleep(0.5)
 
 # clicar no BOTÃO CONCLUIR
 pyautogui.hotkey('enter')
-
-# - Preenchimento da aba Bovinocultura de leite:
-# Atividade Rural
-# Condomínio Agropecuário
 
 # Rolar para baixo imediatamente
 pyautogui.click(1616, 320, duration=0.5)
@@ -1486,68 +1368,32 @@ pyautogui.hotkey('ctrl', 'end')
 pyautogui.sleep(0.5)
 
 # Clicar botão Preencher ano (2023)
-pyautogui.click(1657,468, duration=0.5)
+pyautogui.click(1657, 468, duration=0.5)
 
-# campo Sistema de Produção
+# ir para campo Sistema de Produção
 pyautogui.hotkey('tab')
-# ir para o botão salvar seguro rural
 pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(1)
-
-selecionar_opcao_aleatoria()
-
-    # Escolher aleatoriamente uma opção entre 0 e 3
-opcao_aleatoria = random.randint(0, 3)
-
-    # Pressionar a seta para baixo a quantidade de vezes correspondente à opção escolhida
-for _ in range(opcao_aleatoria + 1):
-        pyautogui.press('down')
-
-
-# Aguarde um curto período
-pyautogui.sleep(1)
-
-# Chamando a função para executar as ações com uma opção aleatória
-selecionar_opcao_aleatoria()
-
-pyautogui.press('enter')
-pyautogui.sleep(0.5)
-pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(0.5)
-# ir para o campo SISTEMA DE ORDENHA
-pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(1)
-
-# Escolher aleatoriamente uma opção entre 0 e 3
-opcao_aleatoria = random.randint(0, 3)
-
-for _ in range(opcao_aleatoria + 1):
-    pyautogui.press('down')
-
-# Pressionar a tecla enter
-pyautogui.press('enter')
-pyautogui.sleep(1)
-
-# ir para o campo TIPO DE ATIVIDADE LEITEIRA
-pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(1)
-pyautogui.hotkey('tab')
-
+# Selecionar opção (Extensivo)
 pyautogui.hotkey('down')
 pyautogui.hotkey('down')
-pyautogui.hotkey('enter')
-# Aguarde um curto período
+pyautogui.press('enter')
 pyautogui.sleep(0.5)
 
-# Pressionar a tecla enter
+# ir para campo Sistema de Ordenha
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+# Selecionar opção (Mecânico)
+pyautogui.hotkey('down')
+pyautogui.hotkey('down')
+pyautogui.press('enter')
+pyautogui.sleep(0.5)
+
+# ir para campo Tipo de Atividade Leiteira
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+# Selecionar opção (Produção de leite)
+pyautogui.hotkey('down')
+pyautogui.hotkey('down')
 pyautogui.press('enter')
 
 # Aguarde um curto período
@@ -1823,71 +1669,35 @@ pyautogui.click(1616, 320, duration=0.5)
 pyautogui.hotkey('ctrl', 'end')
 
 # Aguarde um curto período
-pyautogui.sleep(1)
+pyautogui.sleep(0.5)
 
 # Clicar botão Preencher ano (2024)
-pyautogui.click(1616,562, duration=0.5)
+pyautogui.click(1616, 562, duration=0.5)
 
-# campo Sistema de Produção
+# ir para campo Sistema de Produção
 pyautogui.hotkey('tab')
-# ir para o botão salvar seguro rural
 pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(1)
-
-selecionar_opcao_aleatoria()
-
-    # Escolher aleatoriamente uma opção entre 0 e 3
-opcao_aleatoria = random.randint(0, 3)
-
-    # Pressionar a seta para baixo a quantidade de vezes correspondente à opção escolhida
-for _ in range(opcao_aleatoria + 1):
-        pyautogui.press('down')
-
-
-# Aguarde um curto período
-pyautogui.sleep(1)
-
-# Chamando a função para executar as ações com uma opção aleatória
-selecionar_opcao_aleatoria()
-
-pyautogui.press('enter')
-pyautogui.sleep(1)
-pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(1)
-# ir para o campo SISTEMA DE ORDENHA
-pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(1)
-
-# Escolher aleatoriamente uma opção entre 0 e 3
-opcao_aleatoria = random.randint(0, 3)
-
-for _ in range(opcao_aleatoria + 1):
-    pyautogui.press('down')
-
-# Pressionar a tecla enter
-pyautogui.press('enter')
-pyautogui.sleep(1)
-
-# ir para o campo TIPO DE ATIVIDADE LEITEIRA
-pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(1)
-pyautogui.hotkey('tab')
-
+# Selecionar opção (Extensivo)
 pyautogui.hotkey('down')
 pyautogui.hotkey('down')
-pyautogui.hotkey('enter')
-# Aguarde um curto período
-pyautogui.sleep(1)
+pyautogui.press('enter')
+pyautogui.sleep(0.5)
 
-# Pressionar a tecla enter
+# ir para campo Sistema de Ordenha
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+# Selecionar opção (Mecânico)
+pyautogui.hotkey('down')
+pyautogui.hotkey('down')
+pyautogui.press('enter')
+pyautogui.sleep(0.5)
+
+# ir para campo Tipo de Atividade Leiteira
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+# Selecionar opção (Produção de leite)
+pyautogui.hotkey('down')
+pyautogui.hotkey('down')
 pyautogui.press('enter')
 
 # Aguarde um curto período

@@ -19,66 +19,40 @@ pyautogui.sleep(0.5)
 # Clicar botão Preencher ano (2021)
 pyautogui.click(1649,289, duration=0.5)
 
-# campo Sistema de Produção
-pyautogui.hotkey('tab')
-# ir para o botão salvar seguro rural
-pyautogui.hotkey('tab')
+# Rolar para baixo imediatamente
+pyautogui.click(1616, 320, duration=0.5)
+pyautogui.hotkey('ctrl', 'end')
 
 # Aguarde um curto período
 pyautogui.sleep(0.5)
 
-def selecionar_opcao_aleatoria():
+# Clicar botão Preencher ano (2020)
+pyautogui.click(1631, 208, duration=0.5)
 
-    # Escolher aleatoriamente uma opção entre 0 e 3
-    opcao_aleatoria = random.randint(0, 3)
-
-    # Pressionar a seta para baixo a quantidade de vezes correspondente à opção escolhida
-    for _ in range(opcao_aleatoria + 1):
-        pyautogui.press('down')
-
-
-# Aguarde um curto período
-pyautogui.sleep(0.5)
-
-# Chamando a função para executar as ações com uma opção aleatória
-selecionar_opcao_aleatoria()
-
-pyautogui.press('enter')
-pyautogui.sleep(0.5)
+# ir para campo Sistema de Produção
 pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(0.5)
-# ir para o campo SISTEMA DE ORDENHA
 pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(0.5)
-
-# Escolher aleatoriamente uma opção entre 0 e 3
-opcao_aleatoria = random.randint(0, 3)
-
-for _ in range(opcao_aleatoria + 1):
-    pyautogui.press('down')
-
-# Pressionar a tecla enter
+# Selecionar opção (Extensivo)
+pyautogui.hotkey('down')
+pyautogui.hotkey('down')
 pyautogui.press('enter')
 pyautogui.sleep(0.5)
 
-# ir para o campo TIPO DE ATIVIDADE LEITEIRA
+# ir para campo Sistema de Ordenha
 pyautogui.hotkey('tab')
-
-# Aguarde um curto período
-pyautogui.sleep(0.5)
 pyautogui.hotkey('tab')
-
+# Selecionar opção (Mecânico)
 pyautogui.hotkey('down')
 pyautogui.hotkey('down')
-pyautogui.hotkey('enter')
-# Aguarde um curto período
+pyautogui.press('enter')
 pyautogui.sleep(0.5)
 
-# Pressionar a tecla enter
+# ir para campo Tipo de Atividade Leiteira
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+# Selecionar opção (Produção de leite)
+pyautogui.hotkey('down')
+pyautogui.hotkey('down')
 pyautogui.press('enter')
 
 # Aguarde um curto período
