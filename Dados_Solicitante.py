@@ -211,11 +211,3 @@ pyautogui.click(1223, 447, duration=0.3)
 
 # Clicar no botão Salvar Informações Adicionais
 pyautogui.click(1643, 512, duration=0.3)
-
-'''
-# CMD
-# Python
-# from mouseinfo import mouseInfo
-# mouseInfo()
-# desmarcar 3 sec delay
-'''
