@@ -21,6 +21,7 @@ pyautogui.click(191,645)
 
 # Clicar em pular
 # ir para Botão Pular
+
 pyautogui.hotkey('tab')
 pyautogui.sleep(0.3)
 pyautogui.hotkey('enter')

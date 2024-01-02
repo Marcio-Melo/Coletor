@@ -5,6 +5,12 @@ import keyboard
 import pytest
 import time
 
+from nova_operacao_leite import nova_operacao
+from dados_solicitante import dados_solicitante
+from credito import preencher_credito
+from atividade_rural import preencher_rural
+
+
 '''
 # CMD
 # Python
@@ -17,23 +23,38 @@ import time
 # INFORMAÇÕES GERAIS
 
 # Clicar em pular
-# pyautogui.click(1726, 902)
+#pyautogui.click(1090,895)
+
+# Clicar na outra tela
+pyautogui.click(825, 293)
 
 # Clicar e digitar meu usuário
-pyautogui.click(894, 574)
+pyautogui.hotkey('tab')
 keyboard.write('marcio')
-# pyautogui.sleep(0.3)
+pyautogui.sleep(0.3)
 
 # ir para campo senha e preencher
 pyautogui.hotkey('tab')
 keyboard.write('marcio')
-# pyautogui.sleep(0.3)
+pyautogui.sleep(0.3)
 
 # Clicar no botão lembrar-me
 pyautogui.hotkey('tab')
 pyautogui.hotkey('enter')
-# pyautogui.sleep(0.3)
+pyautogui.sleep(0.3)
 
 # Clicar em entrar
 pyautogui.hotkey('tab')
 pyautogui.hotkey('enter')
+
+# Chame a função importada
+
+nova_operacao()
+dados_solicitante()
+
+pyautogui.click(184, 360)
+
+preencher_credito()
+
+pyautogui.click(228, 424)
+preencher_rural()

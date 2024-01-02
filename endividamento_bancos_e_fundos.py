@@ -6,120 +6,122 @@ import pytest
 import time
 
 # Rolar para baixo imediatamente
-pyautogui.click(948,294)
+pyautogui.click(670, 771)
 pyautogui.hotkey('ctrl', 'end')
 pyautogui.sleep(0.3)
 
-# Clicar em Adicionar Bem
-pyautogui.click(1086,244)
-pyautogui.moveTo(350,887)
-pyautogui.sleep(0.3)
-# Ir para o campo Tipo do patrimônio
-pyautogui.hotkey('tab')
-pyautogui.hotkey('tab')
-pyautogui.sleep(0.3)
-# Selecionar Armazens
-pyautogui.hotkey('down')
-pyautogui.hotkey('down')
-pyautogui.hotkey('down')
-pyautogui.hotkey('enter')
+# Clicar em Cadastrar endividamento
+pyautogui.click(1052, 252)
+pyautogui.moveTo(396, 745)
 pyautogui.sleep(0.3)
 
-# Ir para o campo Matrícula
+# Ir para o campo Tipo de Produto
 pyautogui.hotkey('tab')
 pyautogui.sleep(0.3)
-# Digitar valor
-keyboard.write('45549')
-pyautogui.sleep(0.3)
-
-# Ir para o campo CCIR
 pyautogui.hotkey('tab')
 pyautogui.sleep(0.3)
-# Digitar valor
-keyboard.write('120')
-pyautogui.sleep(0.3)
-
-# Ir para o campo Nome do armazém
-pyautogui.hotkey('tab')
-pyautogui.sleep(0.3)
-# Digitar valor
-keyboard.write('Armazém do Jucá')
-pyautogui.sleep(0.3)
-
-# Ir para o campo UF
-pyautogui.hotkey('tab')
-pyautogui.sleep(0.3)
-# Selecionar valor
+# Selecionar Tipo de Produto (Bancos e Fundos)
 pyautogui.hotkey('down')
 pyautogui.hotkey('down')
 pyautogui.hotkey('enter')
 pyautogui.sleep(0.3)
 
-# Ir para o campo Município
+# Ir para o campo Instituição Financeira
 pyautogui.hotkey('tab')
 pyautogui.sleep(0.3)
-# Selecionar valor
+# Digitar
+keyboard.write('Banco do Brasil')
+pyautogui.sleep(0.3)
+
+# Ir para o campo Modalidade
+pyautogui.hotkey('tab')
+pyautogui.sleep(0.3)
+# Selecionar Modalidade (ACC)
 pyautogui.hotkey('down')
 pyautogui.hotkey('down')
 pyautogui.hotkey('enter')
 pyautogui.sleep(0.3)
 
-# Ir para o campo Tipo
+# Ir para o campo Garantia
 pyautogui.hotkey('tab')
 pyautogui.sleep(0.3)
-# Selecionar valor (Armazém convencional)
+# Selecionar Garantia (Alienação Fiduciária de Imóvel Rural)
 pyautogui.hotkey('down')
 pyautogui.hotkey('down')
 pyautogui.hotkey('enter')
 pyautogui.sleep(0.3)
 
-# Ir para o campo Área Construída (m²)
+# Ir para o campo Tomador do financiamento
 pyautogui.hotkey('tab')
 pyautogui.sleep(0.3)
-# Digitar valor
-keyboard.write('756423')
+# Digitar
+keyboard.write('Banco do Brasil')
 pyautogui.sleep(0.3)
 
-# Ir para o campo Capacidade estática de armazenagem (ton)
+# Ir para o Prazo de Carência
 pyautogui.hotkey('tab')
 pyautogui.sleep(0.3)
-# Digitar valor
-keyboard.write('47814')
-pyautogui.sleep(0.3)
-
-# Ir para o campo Valor de mercado (R$)
-pyautogui.hotkey('tab')
-pyautogui.sleep(0.3)
-# Digitar valor
-keyboard.write('30041581')
-pyautogui.sleep(0.3)
-
-# Ir para o campo Hipoteca
-pyautogui.hotkey('tab')
-pyautogui.sleep(0.3)
-# Selecionar valor (Sim)
+# Selecionar (sem Carência)
 pyautogui.hotkey('down')
 pyautogui.hotkey('down')
 pyautogui.hotkey('enter')
 pyautogui.sleep(0.3)
 
-# Ir para o campo Alienação Fiduciária
+# Ir para o Campo Forma de pagamento
 pyautogui.hotkey('tab')
 pyautogui.sleep(0.3)
-# Selecionar valor (Sim)
+# Selecionar (Única)
 pyautogui.hotkey('down')
 pyautogui.hotkey('down')
 pyautogui.hotkey('enter')
 pyautogui.sleep(0.3)
 
-# Ir para o campo Proprietário(s)
+# Ir para o Campo Moeda
 pyautogui.hotkey('tab')
 pyautogui.sleep(0.3)
-# Digitar valor
-keyboard.write('sócio do governo')
-pyautogui.sleep(0.3)
-
-pyautogui.hotkey('tab')
-pyautogui.hotkey('tab')
+# Selecionar (Real)
+pyautogui.hotkey('down')
+pyautogui.hotkey('down')
 pyautogui.hotkey('enter')
 pyautogui.sleep(0.3)
+
+# Ir para o campo Valor do financiamento
+pyautogui.hotkey('tab')
+pyautogui.sleep(0.3)
+# Digitar
+keyboard.write('15324632')
+pyautogui.sleep(0.3)
+
+# Ir para o campo Taxa de Juros (% a.a.)
+pyautogui.hotkey('tab')
+pyautogui.sleep(0.3)
+# Digitar
+keyboard.write('521')
+pyautogui.sleep(0.3)
+
+# Ir para o campo Valor das parcelas
+pyautogui.hotkey('tab')
+pyautogui.sleep(0.3)
+# Digitar
+keyboard.write('542384')
+pyautogui.sleep(0.3)
+
+# Ir para o campo Nº de parcelas restantes
+pyautogui.hotkey('tab')
+pyautogui.sleep(0.3)
+# Digitar
+keyboard.write('234')
+pyautogui.sleep(0.3)
+
+# Ir para o campo Último Vencimento
+pyautogui.hotkey('tab')
+pyautogui.sleep(0.3)
+# Digitar
+keyboard.write('22122023')
+pyautogui.sleep(0.3)
+
+# Ir para o botão Salvar Endividamento
+pyautogui.hotkey('tab')
+pyautogui.hotkey('tab')
+pyautogui.sleep(0.3)
+pyautogui.hotkey('enter')
